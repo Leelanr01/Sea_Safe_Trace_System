@@ -4,6 +4,7 @@ import pandas as pd
 import folium
 from geopy.distance import geodesic
 import matplotlib.pyplot as plt
+from streamlit.components.v1 import html
 
 image_path = "img_0007.jpg"
 image = cv2.imread(image_path)
