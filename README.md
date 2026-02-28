@@ -1,19 +1,42 @@
-# 🎈 Blank app template
+Install these inside your yolov8_env:
 
-A simple Streamlit app template for you to modify!
+pip install streamlit opencv-python pandas folium geopy matplotlib
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+streamlit
 
-### How to run it on your own machine
+Frontend dashboard
+Used for:
 
-1. Install the requirements
+import streamlit as st
+opencv-python
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+Image processing (oil spill detection)
+Used for:
 
-2. Run the app
+import cv2
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+pandas
+
+Reading AIS CSV file
+Used for:
+
+import pandas as pd
+folium
+
+Interactive map
+Used for:
+
+import folium
+geopy
+
+Distance calculation between vessels and oil spill
+Used for:
+
+from geopy.distance import geodesic
+
+matplotlib
+
+Display oil mask image
+Used for:
+
+import matplotlib.pyplot as plt
